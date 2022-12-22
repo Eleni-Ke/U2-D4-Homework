@@ -1,0 +1,29 @@
+:root {
+    --clr-purple: #7651FE;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+nav {
+    margin-right: auto;
+}
+
+.round-icon {
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.account-icon img{
+    width: 100%;
+}
+
+.hero {
+    background-color: var(--clr-purple);
+}
