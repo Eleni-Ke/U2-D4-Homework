@@ -61,17 +61,17 @@ nav {
 .hero {
     background-color: var(--clr-purple);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 0;
+    padding-left: 8%;
+    padding-right: 8%;
     height: 350px;
 }
 
-.hero > div {
-    width: 35%;
-    margin-left: 20px;
-    margin-right: 20px;
+
+.hero-text {
+    width: 43%;
 }
 
 h1 {
@@ -105,6 +105,7 @@ h1 {
 
 .hero-img {
     height: 100%;
+    width: 55%;
 }
 
 .hero-img img{
@@ -115,14 +116,18 @@ h1 {
 /* course info container */
 .course-infos-container {
     display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
     font-size: 15px;
-    margin: 13px auto 13px 13%;
+    margin-top: 13px;
+    margin-bottom: 13px;
 }
 
 .course-infos {
     display: flex;
     align-items: center;
-    margin-right: 80px;
+    min-width: 36%;
+    margin-right: 5px;
     height: 100%;
 }
 
@@ -146,7 +151,8 @@ h1 {
 /* courses */
 .courses {
     background-color: var(--clr-grey);
-    padding-left: 14%;
+    padding-left: 8%;
+    padding-right: 8%;
     padding-top: 50px;
 }
 
@@ -157,13 +163,15 @@ h1 {
 
 .course-card-container {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 100px;
+    flex-wrap: wrap;
 }
 
 .course-card {
     background-color: white;
-    width: 220px;
-    margin-right: 2%;
+    width: 200px;
+    margin-right: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -253,21 +261,28 @@ h1 {
 
 footer {
     background-color: var(--clr-grey);
+    width: 100%;
+
+    box-sizing: border-box;
     display: flex;
-    padding-left: 14%;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
     font-size: 12px;
     padding-bottom: 12px;
     color: var(--clr-drk-grey);
 }
 
+
 .copyright {
+    width: 250px;
     margin-right: auto;
 }
 
 footer nav {
     display: flex;
+    justify-content: space-between;
+    width: 210px;
+    margin-right: 0;
 }
 
-.footer-nav-link {
-    margin-left: 20%;
-}
