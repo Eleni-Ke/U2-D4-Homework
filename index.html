@@ -173,7 +173,46 @@
         </nav>
     </footer>
     <script>
-        const
+        window.addEventListener('resize', () => {
+            let courseContainerArr = document.getElementsByClassName('course-card-container');
+            if (window.innerWidth < 1000) {
+                for (let i = 0; i < courseContainerArr.length; i++) {
+                    courseContainerArr[i].lastElementChild.classList.add('hidden');
+                    
+
+                    if (window.innerWidth < 804) {
+                        let currentCourseContainerCardsArr = courseContainerArr[i].children;
+                        console.log(currentCourseContainerCardsArr)
+                        let secondLastCardNode = currentCourseContainerCardsArr[currentCourseContainerCardsArr.length-1]
+                        secondLastCardNode.classList.add("hidden")
+                    } else{
+                        let currentCourseContainerCardsArr = courseContainerArr[i].children;
+                        let secondLastCardNode = currentCourseContainerCardsArr[currentCourseContainerCardsArr.length-1]
+                        secondLastCardNode.classList.remove("hidden")
+                    } 
+                }
+            } 
+            else {
+                for (let i = 0; i < courseContainerArr.length; i++) {
+                    courseContainerArr[i].lastElementChild.classList.remove('hidden');
+                }
+            }
+        })
+
+
+        // removeLastCards = () => {
+        //     let courseContainerArr = document.getElementsByClassName('course-card-container');
+        //     if (window.innerWidth < 1000) {
+        //         for (let i = 0; i < courseContainerArr.length; i++) {
+        //             courseContainerArr[i].lastElementChild.classList.add('hidden');
+        //         }
+        //     }
+        //     else {
+        //         for (let i = 0; i < courseContainerArr.length; i++) {
+        //             courseContainerArr[i].lastElementChild.classList.remove('hidden');
+        //         }
+        //     }
+        // }
     </script>
 </body>
 </html>
