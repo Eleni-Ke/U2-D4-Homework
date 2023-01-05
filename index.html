@@ -180,18 +180,34 @@
                     courseContainerArr[i].lastElementChild.classList.add('hidden');
                     
 
-                    if (window.innerWidth < 804) {
-                        let currentCourseContainerCardsArr = courseContainerArr[i].children;
-                        console.log(currentCourseContainerCardsArr)
-                        let secondLastCardNode = currentCourseContainerCardsArr[currentCourseContainerCardsArr.length-1]
-                        secondLastCardNode.classList.add("hidden")
-                    } else{
-                        let currentCourseContainerCardsArr = courseContainerArr[i].children;
-                        let secondLastCardNode = currentCourseContainerCardsArr[currentCourseContainerCardsArr.length-1]
-                        secondLastCardNode.classList.remove("hidden")
-                    } 
+                    // if (window.innerWidth < 804) {
+                    //     let currentCourseContainerCardsArr = courseContainerArr[i].children;
+                    //     console.log(currentCourseContainerCardsArr)
+                    //     let secondLastCardNode = currentCourseContainerCardsArr[currentCourseContainerCardsArr.length-1]
+                    //     secondLastCardNode.classList.add("hidden")
+                    // } else{
+                    //     let currentCourseContainerCardsArr = courseContainerArr[i].children;
+                    //     let secondLastCardNode = currentCourseContainerCardsArr[currentCourseContainerCardsArr.length-1]
+                    //     secondLastCardNode.classList.remove("hidden")
+                    // } 
                 }
             } 
+            // if (window.innerWidth < 804) {
+            //     for (let i = 0; i < courseContainerArr.length; i++) {
+            //         let currentCourseContainerCardsArr = courseContainerArr[i].children;
+            //         console.log(currentCourseContainerCardsArr)
+            //         let secondLastCardNode = currentCourseContainerCardsArr[currentCourseContainerCardsArr.length-1]
+            //         secondLastCardNode.classList.add("hidden")
+            //     }
+            // }
+            // if (window.innerWidth < 804){
+            //     for (let i = 0; i < courseContainerArr.length; i++) {
+            //         let currentCourseContainerCardsArr = courseContainerArr[i].children;
+            //         console.log(currentCourseContainerCardsArr)
+            //         let secondLastCardNode = currentCourseContainerCardsArr[currentCourseContainerCardsArr.length-1]
+            //         secondLastCardNode.classList.remove("hidden")
+            //     }
+            // }
             else {
                 for (let i = 0; i < courseContainerArr.length; i++) {
                     courseContainerArr[i].lastElementChild.classList.remove('hidden');
